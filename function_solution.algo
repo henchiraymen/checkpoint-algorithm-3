@@ -1,4 +1,4 @@
-FUNCTION dot_product(VAR p : FLOAT ,vect1,vect2 : ARRAY_OF FLOAT) : BOOLEAN
+FUNCTION dot_product(VAR p : FLOAT ,vect1,vect2 : ARRAY_OF FLOAT) : FLOAT
 VAR
     i,j : INTEGER;
 BEGIN
