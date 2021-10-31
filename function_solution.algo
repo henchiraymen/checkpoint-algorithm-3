@@ -1,0 +1,24 @@
+FUNCTION dot_product(VAR p : FLOAT ,vect1,vect2 : ARRAY_OF FLOAT) : BOOLEAN
+VAR
+    i,j : INTEGER;
+BEGIN
+    FOR i FROM 0 TO vect1.length-1 STEP 1  DO
+        FOR j FROM 0 TO vect2.length-1 STEP 1  DO
+            p := p + (vect1[i]*vect2[j]);
+        END_FOR
+    END_FOR
+    RETURN p ;
+END
+
+ALGORITHM Dot_product
+VAR
+    v1, v2 : ARRAY_OF FLOAT[10];
+    ps : INTEGER:= 0;
+BEGIN
+    ps := dot_product(ps,v1,v2);
+    IF (ps = O) THEN
+        Write("the two vectors are orthogonal")
+    ELSE
+        Write("the two vectors are not orthogonal")
+    END_IF  
+END
